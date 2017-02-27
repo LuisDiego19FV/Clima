@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__weather"
+    android:background="#0099cc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luisd.clima.Activity_Weather">
+
+    <LinearLayout
+        android:id="@+id/lblWeather"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:layout_x="0dp"
+        android:layout_y="208dp">
+
+
+        <TextView
+            android:text="Clouds :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCloudy"
+            android:textColor="#33b5e5"
+            android:textSize="16dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Wind :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWind"
+            android:textColor="#33b5e5"
+            android:textSize="16dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Min :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="230dp"
+        android:layout_y="63dp"
+        android:textColor="#FFF"
+        android:id="@+id/txtMin" />
+
+    <TextView
+        android:text="Max :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="228dp"
+        android:layout_y="37dp"
+        android:textColor="#FFF"
+        android:id="@+id/txtMax" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/wn"
+        android:layout_x="148dp"
+        android:layout_y="60dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:visibility="invisible"
+        android:id="@+id/imageClouds" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ww"
+        android:layout_x="148dp"
+        android:layout_y="60dp"
+        android:scaleX="2.2"
+        android:scaleY="2.2"
+        android:visibility="invisible"
+        android:id="@+id/imageWind" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ws"
+        android:layout_x="148dp"
+        android:layout_y="60dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:visibility="visible"
+        android:id="@+id/imageSunny" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="138dp"
+        android:layout_y="134dp"
+        android:textColor="#FFF"
+        android:textSize="28dp"
+        android:id="@+id/txtTemp" />
+
+
+</AbsoluteLayout>
+
+
